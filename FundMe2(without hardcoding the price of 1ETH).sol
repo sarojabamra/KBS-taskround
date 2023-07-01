@@ -35,11 +35,11 @@ contract FundMe {
     
     }
 
-
-    //without hardcoding the value of 1ETH in USD:
-    //we take input from user, thus we do not have to make a new contract every time for the changing prices of 1ETH
+    //task 1-c removing chain-link integration without hardcoding the value of 1ETH in USD:
+    //we take input from user, thus we do not have to make a new contract every time for the changing prices of ETH
     //we are not using a library here as a library cannot have non-constant variables
     uint256 public priceOf1ETH;
+
     //setting the price of 1ETH
 
     function setPrice(uint256 _setPrice) public returns(uint256) {
